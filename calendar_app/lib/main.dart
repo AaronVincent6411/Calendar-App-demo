@@ -229,7 +229,7 @@ extension TimeOfDayExtension on TimeOfDay {
   String format(BuildContext context) {
     final now = DateTime.now();
     final dateTime = DateTime(now.year, now.month, now.day, hour, minute);
-    final format = MediaQuery.of(context).alwaysUse24HourFormat ? 'HH:mm' : 'hh:mm a';
+    // final format = MediaQuery.of(context).alwaysUse24HourFormat ? 'HH:mm' : 'hh:mm a';
     return TimeOfDay.fromDateTime(dateTime).format(context);
   }
 }
